@@ -72,4 +72,34 @@ Emad Tirmizi
     You should then be directed to the wordpress installation screen
     
     
+Trouble shooting tips
+Tip 1. Increase wait time  
+    make sure to set max_execution_time to 120 in your php.ini
+    you can do this by going to your PHP installation folder
+    in your PHP7 folder in your C: (or wherever you installed it) open the php.ini file
+    once the file is open press ctrl+f open word search
+    type in max, search through the keywords until you find 
+    change max_execution_time to 120
+    change max_input_time to 60 if not already set to 60
+
+Tip 2. Allocate more Memory
+    in the same file make sure that your memory_limit is set to 1G instead of 128M
+    
+Tip 3. Uncomment certain dll's
+    make sure you have the following dll's uncommented 
+    {
+     extension=php_gd2.dll
+     extension=php_curl.dll
+     extension=php_mbstring.dll
+     extension=php_openssl.dll
+     extension=php_pdo_mysql.dll
+     extension=php_pdo_sqlite.dll
+     extension=php_sockets.dll
+     extension=mysqli.dll
+    }
+    Also for where it reads
+    {
+    ; extension_dir = "ext" 
+    }
+    remove the ; so the line reads extension_dir = "ext"
     
