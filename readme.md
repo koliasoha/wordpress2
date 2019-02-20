@@ -3,7 +3,7 @@
 Soha Kolia
 Emad Tirmizi
 
-
+Installing wordpress and setting it up:
 1. Create a database
     go to View, located at the top toolbar,
     from the dropdown select tool windows
@@ -71,6 +71,30 @@ Emad Tirmizi
     
     You should then be directed to the wordpress installation screen
     
+  Making Github repository and collaborating:
+  1, Create a new github repository.
+  One member of the group creates a new repository on github. Thus person is the owner of the repository and has the master branch.
+  
+  
+  2, Upload the wordpress project in PHPStorm to github.
+  In PHPStorm go to VCS| Import into Version Control| Share Project on Github
+  
+  3, Add collaborator on Github.
+  Go to Settings| Collaborators enter your github password when asked. In the Collaborator window search for you partners github username and add them. Your partner must have received an email, they will need to accept the invitation and confirm.
+  
+  4, Cloning the repository.
+  The second member of the group needs to copy the https link from the github repository that the first person made. 
+  Go to PHPStorm VCS| Checkout from Version Control| Git. In the window that pops up, paste the link and clone the repository.
+  
+  5, Create another branch.
+  The second person needs to create another branch so that they can commit and push the changes that they make to the project.
+  In the bottom right corner of PHPStorm click where it says Git:master and make a new branch.
+  
+  
+  6, Merge the branches.
+  After all the changes are commited and pushed to github by both members the owner of the repository can go to github, navigate to branches| all branches| merge.
+ 
+  
     
 Trouble shooting tips
 Tip 1. Increase wait time  
@@ -102,4 +126,12 @@ Tip 3. Uncomment certain dll's
     ; extension_dir = "ext" 
     }
     remove the ; so the line reads extension_dir = "ext"
+ 
+ Tip 4: You might get an error asking you to fix the interpreter.
+ To fix this error go to Run| Edit Configuration click where it says fix.
+ Choose PHP version 7 or higher.
+ 
+ 
+    
+    
     
